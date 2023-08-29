@@ -1,7 +1,7 @@
 <?php
     $post_id = get_the_ID();
 ?>
-<section class="banner">
+<section class="banner" id="banner">
     <div class="banner__container">
         <div class="banner__left padding-left-part">
             <div class="banner__title section-title">

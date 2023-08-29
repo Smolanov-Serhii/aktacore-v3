@@ -11,22 +11,47 @@
 
 ?>
 
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'aktacore-v3' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'aktacore-v3' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'aktacore-v3' ), 'aktacore-v3', '<a href="http://underscores.me/">Underscores.me</a>' );
-				?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
-</div><!-- #page -->
+	<footer class="footer">
+		<div class="footer__top">
+            <div class="footer__container main-container">
+                <div class="footer__logo">
+                    <img src="<?php echo get_template_directory_uri() . '/img/logo-footer.svg' ?>" alt="Footer logo">
+                </div>
+                <nav class="footer__nav">
+                    <?php
+                    wp_nav_menu(
+                        array(
+                            'theme_location' => 'main-menu',
+                            'menu_id'        => 'main-menu',
+                        )
+                    );
+                    ?>
+                </nav>
+                <div class="footer__socials">
+                    <a href="#">
+                        <img src="<?php echo get_template_directory_uri() . '/img/telegram.svg' ?>">
+                    </a>
+                    <a href="#">
+                        <img src="<?php echo get_template_directory_uri() . '/img/twetter.svg' ?>">
+                    </a>
+                    <a href="#">
+                        <img src="<?php echo get_template_directory_uri() . '/img/facebook.svg' ?>">
+                    </a>
+                    <a href="#">
+                        <img src="<?php echo get_template_directory_uri() . '/img/instagramm.svg' ?>">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer__copyright">
+            <div class="footer__container main-container">
+                <div class="copyright">
+                    Copyright 2009 - <?php echo date('Y') ?> All rights reserved
+                </div>
+            </div>
+        </div>
+	</footer>
+
 
 <?php wp_footer(); ?>
 
