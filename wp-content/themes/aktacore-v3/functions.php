@@ -49,7 +49,7 @@ function aktacore_v3_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus(
 		array(
-			'menu-1' => esc_html__( 'Primary', 'aktacore-v3' ),
+			'main-menu' => esc_html__( 'Основное меню', 'aktacore-v3' ),
 		)
 	);
 

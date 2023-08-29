@@ -65,6 +65,10 @@ $(document).ready(function () {
                 delay: 2500,
                 disableOnInteraction: false,
             },
+            pagination: {
+                el: ".banner .swiper-pagination",
+                clickable: true,
+            },
         });
     }
 
