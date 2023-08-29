@@ -3,8 +3,8 @@
 ?>
 <section class="banner">
     <div class="banner__container">
-        <div class="banner__left padding-left">
-            <div class="banner__title">
+        <div class="banner__left padding-left-part">
+            <div class="banner__title section-title">
                 <?php the_field('zagolovok_bloka' , $post_id)?>
             </div>
             <div class="banner__desc">

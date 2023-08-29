@@ -15,7 +15,7 @@
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.cdnfonts.com/css/codec-cold" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/codec-cold?styles=17541,17535,17536" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js" defer></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -65,22 +65,24 @@
 </div>
 <header class="header default">
     <div class="header__container main-container">
-        <div class="header__logo">
-            <picture>
-                <source srcset="<?php echo get_template_directory_uri() . '/img/logo.svg' ?>" media="(min-width: 500px)" />
-                <img src="<?php echo get_template_directory_uri() . '/img/logo-mobile.svg' ?>"/>
-            </picture>
+        <div class="header__part">
+            <div class="header__logo">
+                <picture>
+                    <source srcset="<?php echo get_template_directory_uri() . '/img/logo.svg' ?>" media="(min-width: 500px)" />
+                    <img src="<?php echo get_template_directory_uri() . '/img/logo-mobile.svg' ?>"/>
+                </picture>
+            </div>
+            <nav class="header__nav">
+                <?php
+                wp_nav_menu(
+                    array(
+                        'theme_location' => 'main-menu',
+                        'menu_id'        => 'main-menu',
+                    )
+                );
+                ?>
+            </nav>
         </div>
-        <nav class="header__nav">
-            <?php
-            wp_nav_menu(
-                array(
-                    'theme_location' => 'main-menu',
-                    'menu_id'        => 'main-menu',
-                )
-            );
-            ?>
-        </nav>
     </div>
 </header>
 
