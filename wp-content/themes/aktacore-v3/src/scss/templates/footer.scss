@@ -8,10 +8,32 @@
   &__top{
     padding: 23px 0;
     border-bottom: 1px solid #76AD00;
+    .footer__container{
+      @media all and (max-width: 1024px){
+        flex-wrap: wrap;
+      }
+    }
+  }
+  &__logo{
+    @media all and (max-width: 1024px){
+      width: 100%;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+  }
+  &__nav{
+    @media all and (max-width: 1024px){
+      width: 100%;
+      margin-bottom: 20px;
+      text-align: center;
+    }
   }
   .menu{
     display: flex;
     align-items: center;
+    @media all and (max-width: 1024px){
+      justify-content: center;
+    }
     a{
       color: #FFF;
       font-size: 14px;
@@ -27,11 +49,23 @@
     }
   }
   &__socials{
+    @media all and (max-width: 1024px){
+      width: 100%;
+      margin-bottom: 20px;
+      text-align: center;
+      justify-content: center;
+    }
     a{
       display: inline-block;
       margin-right: 16px;
+      @media all and (max-width: 1024px){
+        margin: 0 8px;
+      }
       &:last-child{
         margin-right: 0;
+        @media all and (max-width: 1024px){
+          margin: 0 8px;
+        }
       }
     }
   }
@@ -45,6 +79,9 @@
       font-style: normal;
       font-weight: 400;
       line-height: normal;
+      @media all and (max-width: 1024px){
+        margin: auto;
+      }
     }
   }
 }

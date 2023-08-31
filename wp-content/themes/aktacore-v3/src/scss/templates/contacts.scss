@@ -1,11 +1,46 @@
 .contacts{
   margin-bottom: 56px;
+  @media all and (max-width: 1400px){
+
+  }
+  @media all and (max-width: 1024px){
+    margin-bottom: 0;
+  }
+  @media all and (max-width: 768px){
+
+  }
+  @media all and (max-width: 500px){
+
+  }
   &__container{
     display: flex;
     align-items: center;
+    @media all and (max-width: 1400px){
+
+    }
+    @media all and (max-width: 1024px){
+      flex-wrap: wrap;
+    }
+    @media all and (max-width: 768px){
+
+    }
+    @media all and (max-width: 500px){
+
+    }
   }
   &__content{
     width: 50%;
+    padding-right: 40px;
+    @media all and (max-width: 1024px){
+      width: 100%;
+      margin-bottom: 40px;
+    }
+    @media all and (max-width: 758px){
+      padding-right: 35px;
+    }
+    @media all and (max-width: 500px){
+      padding-right: 20px;
+    }
   }
   &__row{
     display: flex;
@@ -15,9 +50,12 @@
       margin-bottom: 0;
     }
     svg{
-      width: 24px;
-      height: 24px;
-      margin-right: 10px;
+      width: 24px!important;
+      height: 24px!important;
+      margin-right: 10px!important;
+    }
+    span{
+      max-width: calc(100% - 34px);
     }
     > div{
       display: flex;
@@ -32,6 +70,9 @@
       line-height: 135.922%;
       letter-spacing: 0.45px;
       font-family: 'Codec Cold Trial', sans-serif;
+      @media all and (max-width: 500px){
+        font-size: 14px;
+      }
     }
     a{
       display: flex;
@@ -46,6 +87,11 @@
     width: 50%;
     border-radius: 10px 0 0 10px;
     overflow: hidden;
+    @media all and (max-width: 1024px){
+      width: 100%;
+      height: 40vh;
+      border-radius: 0;
+    }
   }
   &__title{
     margin-bottom: 28px;

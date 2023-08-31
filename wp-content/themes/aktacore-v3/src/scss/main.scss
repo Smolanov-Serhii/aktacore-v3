@@ -114,6 +114,12 @@ main{
   line-height: 96.4%;
   letter-spacing: 1.675px;
   text-transform: uppercase;
+  @media all and (max-width: 1600px){
+    font-size: 54px;
+  }
+  @media all and (max-width: 1440px){
+    font-size: 48px;
+  }
   @media all and (max-width: 1024px){
     font-size: 42px;
   }
@@ -139,6 +145,9 @@ main{
   }
 }
 .absolute{
+  @media all and (max-width: 1024px){
+    opacity: 0.5;
+  }
   > div{
     position: absolute;
     pointer-events: none;
